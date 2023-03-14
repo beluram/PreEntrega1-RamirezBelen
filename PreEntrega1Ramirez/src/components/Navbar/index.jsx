@@ -1,6 +1,7 @@
 import styles from "./navbar.module.css";
-import { BsFillCartFill } from "react-icons/bs";
 import logo from './src/img/logo.png';
+import CartWidget from '../CartWidget/CartWidget';
+
 
 const Navbar = () => {
   return (
@@ -10,10 +11,7 @@ const Navbar = () => {
         <p>Nuevo!</p>
         <p>Colección</p>
         <p>Contactanos</p>
-        <div className ={styles.carrito}>
-            <BsFillCartFill />
-            <span>0</span>
-        </div>
+        <CartWidget/>
     </nav>
   );
 };
